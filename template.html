@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Cohort 147 · First Dues Collection · Kellogg EMBA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Kellogg / Northwestern brand */
+    --kellogg: #4E2A84;        /* Northwestern Purple — primary */
+    --kellogg-deep: #361A5E;   /* Purple 110 — depth */
+    --kellogg-dark: #1E0B3A;   /* near-black purple — text on light */
+    --kellogg-soft: #F4EFFA;   /* Purple 10 — washes */
+    --kellogg-tint: #FAF7FE;   /* Purple 5 — page bg */
+    --rich-black: #100C1B;     /* primary text */
+    --ink: #1F1A2D;
+    --ink-soft: #4A4459;
+    --ink-fade: #7E7891;
+    --bg: #ffffff;
+    --rule: #E5E0EF;
+    --rule-strong: #C9BFE0;
+    --gold: #B69961;           /* Kellogg gold accent (sparingly) */
+    --venmo: #008CFF;
+    --zelle: #6D1ED4;
+    --paypal: #003087;
+    --paypal-accent: #0070ba;
+    --green: #15803d;
+    --green-soft: #F0FDF4;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--kellogg-tint);
+    color: var(--rich-black);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .serif {
+    font-family: 'Source Serif 4', Georgia, "Times New Roman", serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--bg);
+    border-left: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    min-height: 100vh;
+  }
+
+  /* === Kellogg wordmark bar === */
+  .brand-bar {
+    background: var(--kellogg-dark);
+    color: #fff;
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .brand-bar .lockup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-bar .lockup .k {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+  .brand-bar .lockup .pipe {
+    width: 1px;
+    height: 16px;
+    background: rgba(255,255,255,0.35);
+  }
+  .brand-bar .lockup .nu {
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+  }
+  .brand-bar .meta {
+    color: rgba(255,255,255,0.65);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    white-space: nowrap;
+  }
+
+  /* === Hero === */
+  header.hero {
+    background:
+      radial-gradient(circle at 100% 0%, rgba(182,153,97,0.22) 0%, transparent 55%),
+      linear-gradient(135deg, var(--kellogg) 0%, var(--kellogg-deep) 60%, var(--kellogg-dark) 100%);
+    color: #fff;
+    padding: 44px 28px 56px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+  header.hero::before {
+    content: "";
+    position: absolute;
+    left: 28px; right: 28px;
+    top: 28px;
+    height: 1px;
+    background: rgba(255,255,255,0.18);
+  }
+  header.hero .kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.78);
+    margin: 14px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  header.hero .kicker .bullet {
+    width: 5px; height: 5px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  header.hero h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: -0.015em;
+    line-height: 1.05;
+  }
+  header.hero .sub {
+    font-size: 15px;
+    color: rgba(255,255,255,0.82);
+    margin-top: 6px;
+    max-width: 480px;
+    font-weight: 400;
+  }
+  header.hero .rule {
+    width: 56px;
+    height: 3px;
+    background: var(--gold);
+    margin: 22px 0 0;
+  }
+
+  /* === Hero action card === */
+  .ask-card {
+    margin: -28px 24px 0;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    box-shadow: 0 14px 32px -12px rgba(30, 11, 58, 0.28);
+    padding: 24px 24px 22px;
+    position: relative;
+    border-top: 4px solid var(--gold);
+  }
+  .ask-card .ask-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--kellogg);
+    margin-bottom: 12px;
+  }
+  .ask-card .amount-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .ask-card .amount {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--rich-black);
+    line-height: 1;
+  }
+  .ask-card .amount span.cents {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--ink-fade);
+    margin-left: 1px;
+  }
+  .ask-card .amount-note {
+    font-size: 12px;
+    color: var(--ink-fade);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .ask-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 18px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+  .ask-meta .pill {
+    padding: 4px 0;
+  }
+  .ask-meta .pill + .pill {
+    border-left: 1px solid var(--rule);
+    padding-left: 18px;
+  }
+  .ask-meta .pill .label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-fade);
+    margin-bottom: 4px;
+  }
+  .ask-meta .pill .value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--rich-black);
+  }
+
+  /* === Sections === */
+  section {
+    padding: 36px 28px 8px;
+  }
+  section h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--rich-black);
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+  section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 40px;
+    height: 2px;
+    background: var(--kellogg);
+  }
+  section .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--kellogg);
+    margin-bottom: 4px;
+  }
+
+  /* === Pay options === */
+  .pay-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .pay-option {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 18px;
+    background: #fff;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .pay-option:hover {
+    border-color: var(--rule-strong);
+    box-shadow: 0 4px 12px -4px rgba(78,42,132,0.08);
+  }
+  .pay-option .pay-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .pay-option .pay-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--rich-black);
+  }
+  .pay-option .pay-name .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px; height: 34px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0;
+  }
+  .pay-option.venmo .badge { background: var(--venmo); }
+  .pay-option.zelle .badge { background: var(--zelle); }
+  .pay-option.paypal .badge { background: var(--paypal); }
+  .pay-option .recipient {
+    font-size: 13px;
+    color: var(--ink-fade);
+    font-weight: 500;
+    text-align: right;
+  }
+  .pay-option .actions {
+    margin-top: 4px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--rich-black);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: opacity 0.15s, transform 0.05s;
+  }
+  .btn:hover { opacity: 0.92; }
+  .btn:active { transform: translateY(1px); }
+  .pay-option.venmo .btn { background: var(--venmo); }
+  .pay-option.zelle .btn { background: var(--zelle); }
+  .pay-option.paypal .btn { background: var(--paypal-accent); }
+  .qr-wrap {
+    margin-top: 14px;
+    padding: 16px;
+    background: var(--kellogg-tint);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    text-align: center;
+  }
+  .qr-wrap img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+  }
+  .qr-wrap .qr-caption {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--ink-fade);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .cash-note {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: var(--green-soft);
+    border-left: 3px solid var(--green);
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .cash-note strong { color: var(--rich-black); }
+
+  /* === Stats === */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 8px 0 22px;
+  }
+  .stat {
+    background: var(--kellogg-soft);
+    border-left: 3px solid var(--kellogg);
+    padding: 16px 18px;
+  }
+  .stat .num {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--kellogg);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .stat .label {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .stat .label .muted { color: var(--ink-fade); }
+
+  /* === Bar chart === */
+  .bar-list { margin: 14px 0 4px; }
+  .bar-item { margin-bottom: 12px; }
+  .bar-item .bar-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--ink-soft);
+  }
+  .bar-item .bar-head .name { color: var(--rich-black); font-weight: 500; }
+  .bar-item .bar-head .pct {
+    font-weight: 700;
+    color: var(--kellogg);
+    font-variant-numeric: tabular-nums;
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .bar-item .bar {
+    height: 5px;
+    background: var(--rule);
+    overflow: hidden;
+  }
+  .bar-item .bar > span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--kellogg) 0%, #6D3EB3 100%);
+  }
+
+  /* === Quotes === */
+  .quote {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--gold);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .quote strong {
+    color: var(--rich-black);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 700;
+  }
+
+  /* === Plan list === */
+  ul.what-next {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+  ul.what-next li {
+    position: relative;
+    padding: 10px 0 10px 22px;
+    margin: 0;
+    font-size: 15px;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+  }
+  ul.what-next li:last-child { border-bottom: none; }
+  ul.what-next li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 18px;
+    width: 8px;
+    height: 1px;
+    background: var(--kellogg);
+  }
+  ul.what-next li strong { color: var(--rich-black); }
+
+  /* === Footer === */
+  footer {
+    margin-top: 32px;
+    padding: 32px 28px 36px;
+    background: var(--kellogg-dark);
+    color: rgba(255,255,255,0.78);
+    border-top: 4px solid var(--gold);
+    text-align: center;
+  }
+  footer .footer-brand {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
+  footer .footer-brand .nu {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255,255,255,0.25);
+  }
+  footer .committee-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 18px 0 6px;
+  }
+  footer .treasurers {
+    color: rgba(255,255,255,0.92);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  footer a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  footer a:hover { color: #fff; border-bottom-color: var(--gold); }
+  footer .updated {
+    margin-top: 18px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.06em;
+  }
+
+  /* === Mobile === */
+  @media (max-width: 540px) {
+    .wrap { border: none; }
+    .brand-bar { padding: 10px 18px; font-size: 10px; gap: 8px; }
+    .brand-bar .lockup .k { font-size: 15px; }
+    .brand-bar .meta { font-size: 9px; }
+    header.hero { padding: 34px 20px 48px; }
+    header.hero h1 { font-size: 30px; }
+    header.hero .sub { font-size: 14px; }
+    .ask-card { margin: -26px 16px 0; padding: 20px; }
+    .ask-card .amount { font-size: 42px; }
+    .ask-card .amount-row { gap: 8px; }
+    .ask-meta { grid-template-columns: 1fr 1fr; }
+    .ask-meta .pill + .pill { padding-left: 14px; }
+    section { padding: 30px 20px 6px; }
+    section h2 { font-size: 19px; }
+    footer { padding: 26px 20px 30px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Brand bar -->
+  <div class="brand-bar">
+    <div class="lockup">
+      <span class="k serif">Kellogg</span>
+      <span class="pipe"></span>
+      <span class="nu">Northwestern</span>
+    </div>
+    <div class="meta">Executive MBA · Miami</div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="kicker"><span class="bullet"></span>Cohort 147 · Treasury Committee</div>
+    <h1>First Dues Collection</h1>
+    <div class="sub">Community fund powering cohort events, swag, speakers, and the moments that turn classmates into a class.</div>
+    <div class="rule"></div>
+  </header>
+
+  <!-- Action card -->
+  <div class="ask-card">
+    <div class="ask-label">Contribute</div>
+    <div class="amount-row">
+      <div class="amount serif">$200<span class="cents">.00</span></div>
+      <div class="amount-note">Winter + Spring 2026</div>
+    </div>
+    <div class="ask-meta">
+      <div class="pill">
+        <div class="label">Pay To</div>
+        <div class="value">Franklin Alvarez</div>
+      </div>
+      <div class="pill">
+        <div class="label">Due By</div>
+        <div class="value">June 18, 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pay -->
+  <section>
+    <h2>How to Pay</h2>
+    <div class="pay-grid">
+
+      <div class="pay-option venmo">
+        <div class="pay-head">
+          <div class="pay-name"><span class="badge">V</span>Venmo</div>
+          <div class="recipient">@Franklin-Alvarez</div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="https://venmo.com/u/Franklin-Alvarez" target="_blank" rel="noopener">Open Venmo →</a>
+        </div>
+      </div>
+
+      <div class="pay-option zelle">
+        <div class="pay-head">
+          <div class="pay-name"><span class="badge">Z</span>Zelle</div>
+          <div class="recipient">Franklin Alvarez<br>xxx-xxx-4035</div>
+        </div>
+        <div class="qr-wrap">
+          <img src="data:image/jpeg;base64,{{ZELLE_B64}}" alt="Zelle QR code for Franklin Alvarez">
+          <div class="qr-caption">Scan in your bank&rsquo;s app</div>
+        </div>
+      </div>
+
+      <div class="pay-option paypal">
+        <div class="pay-head">
+          <div class="pay-name"><span class="badge">P</span>PayPal</div>
+          <div class="recipient">Franklin Alvarez</div>
+        </div>
+        <div class="qr-wrap">
+          <img src="data:image/jpeg;base64,{{PAYPAL_B64}}" alt="PayPal QR code for Franklin Alvarez">
+          <div class="qr-caption">Scan to pay Franklin Alvarez</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="cash-note">
+      Prefer <strong>cash</strong>? Hand $200 to Franklin, Jon, or Minhaz in person at the <strong>June 18 class weekend</strong>.
+    </div>
+  </section>
+
+  <!-- Plan -->
+  <section>
+    <div class="eyebrow">Committee Framework</div>
+    <h2>The Plan</h2>
+    <ul class="what-next">
+      <li><strong>$100 per quarter</strong> for the 6 quarters of the program — matches Cohort 141&rsquo;s standard.</li>
+      <li><strong>This $200 first ask</strong> covers Winter + Spring 2026 combined.</li>
+      <li>Funds allocated in coordination with the <strong>Community Builders, Speaker, and DEI committees</strong> over the next quarter.</li>
+      <li>A <strong>financial summary will be shared periodically</strong>, per Kellogg policy.</li>
+    </ul>
+  </section>
+
+  <!-- Survey -->
+  <section>
+    <div class="eyebrow">Survey Results · March 2026</div>
+    <h2>What You Told Us</h2>
+    <div class="stat-row">
+      <div class="stat">
+        <div class="num serif">44</div>
+        <div class="label">survey responses<br><span class="muted">~85% of the cohort</span></div>
+      </div>
+      <div class="stat">
+        <div class="num serif">$100</div>
+        <div class="label">median dues/quarter<br><span class="muted">86% comfortable at $100+</span></div>
+      </div>
+    </div>
+
+    <p style="font-size:13px; color:var(--kellogg); margin: 22px 0 10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;">Top activity interest</p>
+    <div class="bar-list">
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Cohort swag (water bottles, hoodies)</span><span class="pct">77%</span></div>
+        <div class="bar"><span style="width:77%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Happy hours &amp; dinners in Miami</span><span class="pct">66%</span></div>
+        <div class="bar"><span style="width:66%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Themed / cultural parties at the Hyatt</span><span class="pct">57%</span></div>
+        <div class="bar"><span style="width:57%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Fitness (pickleball, golf, beach volleyball)</span><span class="pct">55%</span></div>
+        <div class="bar"><span style="width:55%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Game nights at the Hyatt</span><span class="pct">48%</span></div>
+        <div class="bar"><span style="width:48%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Birthday &amp; milestone celebrations</span><span class="pct">45%</span></div>
+        <div class="bar"><span style="width:45%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Cohort photobook at graduation</span><span class="pct">41%</span></div>
+        <div class="bar"><span style="width:41%"></span></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-head"><span class="name">Guest speaker events</span><span class="pct">34%</span></div>
+        <div class="bar"><span style="width:34%"></span></div>
+      </div>
+    </div>
+
+    <p style="font-size:13px; color:var(--kellogg); margin: 26px 0 10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;">Open-Response Themes</p>
+    <div class="quote-grid">
+      <div class="quote"><strong>More non-alcohol options.</strong> Many of you noted that great connections don&rsquo;t need to revolve around drinking.</div>
+      <div class="quote"><strong>Cultural variety.</strong> Use the cohort&rsquo;s diversity — restaurants and themes representing each country.</div>
+      <div class="quote"><strong>Inclusive &amp; low-pressure.</strong> Make it easy for introverts and lower-bandwidth classmates to join.</div>
+      <div class="quote"><strong>Support each other.</strong> Meal trains, gift cards, and gestures for major life moments.</div>
+      <div class="quote"><strong>Lunch &lsquo;n learns.</strong> Tap into each other&rsquo;s expertise — including a few skydiving offers we&rsquo;re still processing.</div>
+    </div>
+    <p style="font-size:13px; color:var(--ink-fade); margin: 18px 0 0; font-style: italic;">We&rsquo;ll be working these themes in alongside Community Builders and the other committees.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand serif">Kellogg<span class="nu">Northwestern</span></div>
+    <div class="committee-label">Treasury Committee · Cohort 147</div>
+    <div class="treasurers">Franklin Alvarez &nbsp;·&nbsp; Jon Cooper &nbsp;·&nbsp; Minhaz Mohammed</div>
+    <div><a href="mailto:kellogg147treasury@gmail.com">kellogg147treasury@gmail.com</a></div>
+    <div class="updated">Last updated May 23, 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
