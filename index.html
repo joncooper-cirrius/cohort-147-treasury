@@ -367,6 +367,87 @@
   }
   .cash-note strong { color: var(--rich-black); }
 
+  /* === Collection progress === */
+  .progress-hero {
+    background: var(--kellogg-soft);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--gold);
+    padding: 22px;
+    margin-top: 8px;
+  }
+  .progress-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+  }
+  .progress-stats .pnum {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--kellogg);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .progress-stats .plabel {
+    margin-top: 7px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-fade);
+  }
+  .progress-bar-track {
+    height: 9px;
+    background: #fff;
+    border: 1px solid var(--rule-strong);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .progress-bar-track > span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--kellogg) 0%, #6D3EB3 70%, var(--gold) 130%);
+  }
+  .progress-cap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .progress-cap .pct { color: var(--kellogg); }
+  .thanks {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .thanks strong { color: var(--rich-black); font-family: 'Source Serif 4', Georgia, serif; }
+  .notice {
+    margin-top: 14px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--gold);
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .notice .notice-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #8c6d33;
+    margin-bottom: 5px;
+  }
+  .notice strong { color: var(--rich-black); }
+
   /* === Stats === */
   .stat-row {
     display: grid;
@@ -580,6 +661,37 @@
       </div>
     </div>
   </div>
+
+  <!-- Collection progress -->
+  <section>
+    <div class="eyebrow">Where We Stand</div>
+    <h2>Collection Progress</h2>
+    <div class="progress-hero">
+      <div class="progress-stats">
+        <div>
+          <div class="pnum serif">$4,221</div>
+          <div class="plabel">Collected so far</div>
+        </div>
+        <div>
+          <div class="pnum serif">22</div>
+          <div class="plabel">Classmates contributed</div>
+        </div>
+      </div>
+      <div class="progress-bar-track"><span style="width:43%"></span></div>
+      <div class="progress-cap"><span>22 of 51 classmates</span><span class="pct">43% participation</span></div>
+      <p class="thanks"><strong>Thank you to everyone who has contributed.</strong> Your support is what turns ideas into events, swag, and celebrations for the whole cohort. If you haven&rsquo;t chipped in yet, there&rsquo;s still time — details below.</p>
+    </div>
+
+    <div class="notice">
+      <span class="notice-label">Coming this week</span>
+      <strong>Dinner Cruise funds rolling into the treasury.</strong> Contributions collected for the Dinner Cruise trip will be transferred into the cohort treasury this week by Ray, for everyone who opted in. Thank you, Ray, for organizing and handing it off.
+    </div>
+
+    <div class="notice">
+      <span class="notice-label">What&rsquo;s next</span>
+      <strong>Winter + Spring collection closes in June.</strong> We&rsquo;ll wrap up this first collection later this month and then open <strong>Summer 2026 dues</strong>. If you still owe the $200, please send it in before we close out the quarter.
+    </div>
+  </section>
 
   <!-- Pay -->
   <section>
